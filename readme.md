@@ -40,10 +40,14 @@ cd telegram-quiz-bot
 Step 3: Install Dependencies
 npm install
 
-Step 4: Seed the Database
+Step 4: Configure Environment Variables
+TELEGRAM_BOT_TOKEN=YOUR_TELEGRAM_BOT_TOKEN
+MONGODB_URI=YOUR_MONGODB_URI
+
+Step 5: Seed the Database
 node seed.js
 
-Step 5: Run the Bot
+Step 6: Run the Bot
 node bot.js
 
 

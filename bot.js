@@ -1,12 +1,9 @@
-// const token = '7545530729:AAFuqvdLCeAM7A6ZJ8NJWkXAXRkCKI64_t0';
-
-// bot.js
 const TelegramBot = require('node-telegram-bot-api');
 const mongoose = require('mongoose');
 const connectDB = require('./db'); 
 const User = require('./userModel');
 const Topic = require('./topicModel'); 
-const token = '7545530729:AAFuqvdLCeAM7A6ZJ8NJWkXAXRkCKI64_t0'; 
+const token =process.env.BOT_FATHER_TOKEN; 
 const bot = new TelegramBot(token, { polling: true });
 
 
